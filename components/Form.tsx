@@ -5,14 +5,7 @@ import Image from "next/image";
 const Form = () => {
   return (
     <section className="">
-      <div
-        className="flex items-center justify-center bg-gray-50 px-4 sm:px-6 lg:px-8"
-        data-netlify="true"
-        data-netlify-honeypot="bot-field"
-        name="feedback"
-        method="POST"
-        action="/success"
-      >
+      <div className="flex items-center justify-center bg-gray-50 px-4 sm:px-6 lg:px-8">
         <div className="max-w-md w-full">
           <div>
             <img
@@ -25,7 +18,14 @@ const Form = () => {
             </h2>
           </div>
           <div className="rounded bg-white max-w-md rounded overflow-hidden shadow-xl p-5">
-            <form className="space-y-4" action="#" method="POST">
+            <form
+              className="space-y-4"
+              data-netlify="true"
+              data-netlify-honeypot="bot-field"
+              name="form"
+              method="POST"
+              action="/success"
+            >
               <input type="hidden" name="remember" defaultValue="True" />
               <div className="rounded-md shadow-sm -space-y-px">
                 <div className="grid gap-6">
